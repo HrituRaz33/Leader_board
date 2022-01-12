@@ -9,17 +9,21 @@
  main
  {
      display: flex;
-     justify-content: center;
+     align-items: center;
+     flex-direction: column;
  }
  .container
  {
      background-color: rgb(200, 221, 221);
      width: 870px;
      padding: 33px;
+     margin-top: 21px;
+     border-radius: 8px;
  }
  hr 
  {
     border: 1px solid rosybrown;
+    margin-bottom: 27px;
  }
  .top-players
  {
@@ -53,6 +57,13 @@
     font-size: 18px;
 }
 /* top blogs styles */
+.blogs
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 26px;
+    
+}
 .blog
 {
     display: flex;
@@ -80,4 +91,13 @@
     text-decoration: none;
     font-size: 16px;
     color: rgb(50, 50, 172);
+}
+.course .course-banner img 
+{
+    width: 224px;
+    height: 104px;
+}
+.fa-star.filled
+{
+    
 }
